@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = '0.7.2' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -28,11 +28,11 @@ requirements:
     - r-bh >=1.58.0_1
     - r-dbi >=0.4.1
     - r-r6
-    - r-rcpp >=0.12.0
+    - r-rcpp >=0.12.6
     - r-assertthat
     - r-lazyeval >=0.1.10
     - r-magrittr
-    - r-tibble
+    - r-tibble >=1.3.1
     - posix                # [win]
     - {{native}}toolchain  # [win]
     - gcc                  # [not win]
@@ -42,11 +42,11 @@ requirements:
     - r-bh >=1.58.0_1
     - r-dbi >=0.4.1
     - r-r6
-    - r-rcpp >=0.12.0
+    - r-rcpp >=0.12.6
     - r-assertthat
     - r-lazyeval >=0.1.10
     - r-magrittr
-    - r-tibble
+    - r-tibble >=1.3.1
     - libgcc  # [not win]
 
 test:
